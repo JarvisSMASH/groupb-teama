@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="p5/p5.js" />
+  <link rel="stylesheet" href="p5/p5.min.js" />
+  <script type="text/javascript" src="p5/smooot.js"></script>
   <!-- =======================================================
     Theme Name: Company
     Theme URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
@@ -42,10 +45,8 @@
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation"><a href="index.html">Home</a></li>
-                <li role="presentation"><a href="contact.html">Contact</a></li>
-                <li role="presentation"><a href="blog.html" class="active">Problem</a></li>
-                <li role="presentation"><a href="services.html">Solution</a></li>
-                <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
+                <li role="presentation"><a href="contact.html">Problem</a></li>
+                <li role="presentation"><a href="blog.html" class="active">Solution</a></li>
                 <li role="presentation"><a href="about.html">About Us</a></li>
               </ul>
             </div>
@@ -55,180 +56,80 @@
     </nav>
   </header>
 
-  <div id="breadcrumb">
+  <section id="main-slider" class="no-margin">
+    <div class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/slider/bg3.jpg)">
+          <div class="container">
+            <div class="row slide-margin">
+              <div class="col-sm-6">
+                <div class="carousel-content">
+                  <h2 class="animation animated-item-1">Our <span>Solution</span></h2>
+                  <p class="animation animated-item-2">How might we lower cost of energy by creating a more sustainable and efficient communities in the metro Atlanta area?</p>
+                  <a class="btn-slide animation animated-item-3" href="services.html">Read More</a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 hidden-xs animation animated-item-4">
+                <div class="slider-img">
+                  <img src="images/slider/img3.png" class="img-responsive">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--/.item-->
+      </div>
+      <!--/.carousel-inner-->
+    </div>
+    <!--/.carousel-->
+  </section>
+    
+  <div class="about">
     <div class="container">
-      <div class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li>Blog</li>
+      <div class="text-center">
+        <h3>WHY DO WE WANT TO SOLVE THIS PROBLEM?</h3>
+      </div>
+        
+      <div class="col-md-1 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <img src="images/logo.png" class="img-responsive" />
+      </div>
+
+      <div class="col-md-10 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+     
+        <h5>The Southeast has the highest rates of energy poverty of any region in the country, a situation compounded by its comparative lack of initiatives to address the many effects that stem from that fact. Low-income families already living in financial poverty to experience a disproportionately high monthly expenditure on energy. 
+          </h5>
+          <h5> If there was a way to reduce the high cost of energy in metro atlanta, then people would could use there income on other basic needs such as medicine and food. As alredy previously stated: Energy poverty has become so severe in the Southeast that many households pay 600 percent more of their annual income on energy than the national average.</h5>
+      </div>
+        
+      <div class="col-md-1 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <img src="images/logo.png" class="img-responsive" />
       </div>
     </div>
   </div>
-
-  <section id="blog" class="container">
-    <div class="blog">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="blog-item">
-            <div class="row">
-              <div class="col-xs-12 col-sm-2">
-                <div class="entry-meta">
-                  <span id="publish_date">07  JUNY</span>
-                  <span><i class="fa fa-user"></i> <a href="#">John Doe</a></span>
-                  <span><i class="fa fa-comment"></i> <a href="#">2 Comments</a></span>
-                  <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-10 blog-content">
-                <a href="#"><img class="img-responsive img-blog" src="images/blog/blog1.jpg" width="100%" alt="" /></a>
-                <h4>Consequat bibendum quam liquam viverra</h4>
-                <p>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula
-                  porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.</p>
-                <a class="btn btn-primary readmore">Read More <i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--/.blog-item-->
-
-          <div class="blog-item">
-            <div class="row">
-              <div class="col-sm-2">
-                <div class="entry-meta">
-                  <span id="publish_date">07  JUNY</span>
-                  <span><i class="fa fa-user"></i> <a href="#">John Doe</a></span>
-                  <span><i class="fa fa-comment"></i> <a href="#">2 Comments</a></span>
-                  <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>
-                </div>
-              </div>
-              <div class="col-sm-10 blog-content">
-                <a href=""><img class="img-responsive img-blog" src="images/3.jpg" width="100%" alt="" /></a>
-                <h4>Consequat bibendum quam liquam viverra</h4>
-                <p>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula
-                  porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.</p>
-                <a class="btn btn-primary readmore">Read More <i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--/.blog-item-->
-
-          <ul class="pagination pagination-lg">
-            <li><a href="#"><i class="fa fa-long-arrow-left"></i>Previous Page</a></li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">Next Page<i class="fa fa-long-arrow-right"></i></a></li>
-          </ul>
-          <!--/.pagination-->
-        </div>
-        <!--/.col-md-8-->
-
-        <aside class="col-md-4">
-          <div class="widget search">
-            <form role="form">
-              <input type="text" class="form-control search_box" autocomplete="off" placeholder="Search Here">
-            </form>
-          </div>
-          <!--/.search-->
-
-          <div class="widget categories">
-            <h3>Recent Comments</h3>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="single_comments">
-                  <img src="images/blog/avatar3.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
-                  <div class="entry-meta small muted">
-                    <span>By <a href="#">Alex</a></span>
-                  </div>
-                </div>
-                <div class="single_comments">
-                  <img src="images/blog/avatar3.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
-                  <div class="entry-meta small muted">
-                    <span>By <a href="#">Alex</a></span>
-                  </div>
-                </div>
-                <div class="single_comments">
-                  <img src="images/blog/avatar3.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
-                  <div class="entry-meta small muted">
-                    <span>By <a href="#">Alex</a></span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <!--/.recent comments-->
-
-
-          <div class="widget categories">
-            <h3>Categories</h3>
-            <div class="row">
-              <div class="col-sm-6">
-                <ul class="blog_category">
-                  <li><a href="#">Computers <span class="badge">04</span></a></li>
-                  <li><a href="#">Smartphone <span class="badge">10</span></a></li>
-                  <li><a href="#">Gedgets <span class="badge">06</span></a></li>
-                  <li><a href="#">Technology <span class="badge">25</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--/.categories-->
-
-          <div class="widget archieve">
-            <h3>Archieve</h3>
-            <div class="row">
-              <div class="col-sm-12">
-                <ul class="blog_archieve">
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> December 2015 <span class="pull-right">(97)</span></a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> November 2015 <span class="pull-right">(32)</span></a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> October 2015 <span class="pull-right">(19)</span></a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> September 2015 <span class="pull-right">(08)</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--/.archieve-->
-
-          <div class="widget tags">
-            <h3>Tag Cloud</h3>
-            <ul class="tag-cloud">
-              <li><a class="btn btn-xs btn-primary" href="#">Apple</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">Barcelona</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">Office</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">Ipod</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">Stock</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">Race</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">London</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">Football</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">Porche</a></li>
-              <li><a class="btn btn-xs btn-primary" href="#">Gadgets</a></li>
-            </ul>
-          </div>
-          <!--/.tags-->
-
-          <div class="widget blog_gallery">
-            <h3>Our Gallery</h3>
-            <ul class="sidebar-gallery">
-              <li><a href="#"><img src="images/blog/gallery1.png" alt="" /></a></li>
-              <li><a href="#"><img src="images/blog/gallery2.png" alt="" /></a></li>
-              <li><a href="#"><img src="images/blog/gallery3.png" alt="" /></a></li>
-              <li><a href="#"><img src="images/blog/gallery4.png" alt="" /></a></li>
-              <li><a href="#"><img src="images/blog/gallery5.png" alt="" /></a></li>
-              <li><a href="#"><img src="images/blog/gallery6.png" alt="" /></a></li>
-            </ul>
-          </div>
-          <!--/.blog_gallery-->
-        </aside>
+    
+  <div class="lates">
+    <div class="container">
+      <div class="text-center">
+        <h2>Our Solutions</h2>
       </div>
-      <!--/.row-->
+      <div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <img src="images/11.jpg" class="img-responsive" />
+        <h3>Stream Solar Panel</h3>
+        <h5>
+            The Stream Solar Panel uses both solar and hydroelectric energy; they would be put in lakes or ponds and are used to generate energy for communities. The solar panel and water turbine run simultaneously, both energy sources go to different homes similar to a wind energy farm.
+ 
+        </h5>
+      </div>
+
+      <div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <img src="images/12.jpg" class="img-responsive" />
+        <h3>Rain Turbine</h3>
+          <h5>Works Simililar to the Stream Solar Panel in that it's powered by water flowing through it, but intead of it flowing through it horizonaly, the water flows thorigh it vertically. As rain pours on the roof of the house it is collected thorigh the gutter system and pured trough the Rain Turbine where the Mechanical energy caused by moter spinning is turned into electrical energy. The remaining water is then filtered and used for the home. </h5>
+      </div>
     </div>
-  </section>
-  <!--/#blog-->
+  </div>
 
   <footer>
     <div class="footer">
